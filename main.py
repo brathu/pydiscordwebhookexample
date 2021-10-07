@@ -1,6 +1,6 @@
 import requests
-import configparser as cp
-cp.setConfig('config/config.json')
+from configparser import Config
+cg = Config('config/config.json')
 
 notify_avatar = 'https://play-lh.googleusercontent.com/T_d7DoNH9W62dq8N-wYqTfr5vxDmya1_35kv_CpIO2ywZCnxqWDDg2iPbVcTXc1_qQ'
 
@@ -11,5 +11,5 @@ payload = {
 	'content': 'example message'
 }
 
-req = requests.post(cp.getUrl(), data=payload)
+req = requests.post(cg.getUrl(), data=payload)
 
