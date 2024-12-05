@@ -4,7 +4,7 @@ I coded an example to send post messagenges over a discord webhook with the pyth
 
 ## Configuration
 
-Edit the 'config.json' in the config folder and change the url to you're webhook url
+Edit the 'config.json' in the config folder and change the url to your webhook url
 
 ```json
 {
